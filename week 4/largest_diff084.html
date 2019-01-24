@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> largest_diff084</title>
+</head>
+<body>
+<script type="text/javascript">
+    
+    function largest_diff(a)
+    {
+        var i,j;
+        var diff=0;
+        for(i=1;i<a.length;i++)
+            {
+                for(j=0;j<i;j++)
+                    {
+                        var k=a[i]-a[j];
+                        if(k>=diff)
+                            {
+                                diff=k;
+                            }
+                    }
+            }
+        return diff;
+    }
+        
+    </script>
+</body>
+</html>
